@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <form class="calculator" name="calc">
+      <input class="value" type="text" name="txt" readonly="">
+      <span class="num clear" onclick="document.calc.txt.value =''">C</span>
+      <span class="num delete" onclick="document.calc.txt.value =''">AC</span>
+      <span class="operations" onclick="document.calc.txt.value +='/'">/</span>
+      <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+      <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+      <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+      <span class="operations" onclick="document.calc.txt.value +='*'">*</span>
+      <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+      <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+      <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+      <span class="num minus" onclick="document.calc.txt.value +='-'">-</span>
+      <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+      <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+      <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+      <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+      <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+      <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+      <span class="equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+    </form>
+</html>
