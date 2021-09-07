@@ -35,6 +35,7 @@ body{
 }
 .calculator span:hover{
   cursor: pointer;
+  background: #ff0000;
 }
 .calculator span:active{
   background: #74ff3b;
@@ -44,7 +45,7 @@ body{
 .calculator span.clear{
   grid-column: span 2;
   width: 120px;
-  background: #ff3077
+  background: #fe019a;
 }
 .calculator span.plus{
   grid-row: span 2;
